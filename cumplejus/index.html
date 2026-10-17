@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi cumple</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Mrs+Saint+Delafield&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="card">
+
+<!-- SECCIÓN 1 -->
+<section class="sec sec1">
+<img class="encaje" src="img/encaje.png" alt="">
+<img class="lino" src="img/lino.png" alt="">
+<h1 class="titulo">Mi cumple</h1>
+
+<div class="datos">
+<h2 class="sub">¿cuándo?</h2>
+<p>te espero el 24/10 (pero es el 22)</p>
+<h2 class="sub">¿hora?</h2>
+<p>a partir de las 19:30</p>
+<h2 class="sub">¿dónde?</h2>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Los+Talas+calle+95+entre+El+Chañar+y+El+Talar+715" target="_blank" rel="noopener">en Los Talas, calle 95 entre el chañar y el talar, tanque num 715.</a></p>
+</div>
+</section>
+
+<!-- SECCIÓN 2 -->
+<section class="sec sec2">
+<img class="clip" src="img/clip.png" alt="">
+<img class="mono" src="img/mono.png" alt="">
+<img class="camara" src="img/camara.png" alt="">
+
+<div class="info">
+<h2 class="sub">info</h2>
+<p class="centro">-va a haber alcohol y comida, pero si tienen algún gusto de alcohol exótico tráiganse jejeje</p>
+<p class="centro">-es cena/previa y después si hay algo salimos (el/la que quiere)</p>
+<h2 class="sub">dresscode:</h2>
+<p>su versión más cool y canchera</p>
+<h2 class="sub">playlist</h2>
+<p><a id="playlist" href="https://open.spotify.com/playlist/5zkscOPAT3ZBT18TIAUf6F?si=mIGfkxdIQua0aFwEcgkkHw" target="_blank" rel="noopener">agregá las canciones que te gustaría escuchar</a></p>
+</div>
+</section>
+
+<!-- SECCIÓN 3 -->
+<section class="sec sec3">
+<img class="lunares" src="img/lunares.png" alt="">
+<img class="sello" src="img/sello.png" alt="">
+<h2 class="titulo confirmar">confirmar asistencia</h2>
+
+<form id="form" class="form">
+<input type="email" name="email" placeholder="tu mail" required>
+<select name="asistencia" required>
+<option value="" disabled selected>asisto/no asisto</option>
+<option value="Asisto">asisto</option>
+<option value="No asisto">no asisto</option>
+</select>
+<input type="hidden" name="subject" value="Confirmación de asistencia - Mi cumple">
+<input type="hidden" name="from_name" value="Invitación Mi cumple">
+<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+<button type="submit">confirmar</button>
+<p id="msg" class="msg" aria-live="polite"></p>
+</form>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
